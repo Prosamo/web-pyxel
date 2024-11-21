@@ -8,11 +8,11 @@ class App:
     def update(self):
         #十字キー
         if pyxel.btnp(pyxel.GAMEPAD1_BUTTON_DPAD_UP):
-            self.y += 2
-        if pyxel.btnp(pyxel.GAMEPAD1_BUTTON_DPAD_DOWN):
             self.y -= 2
-        if pyxel.btnp(pyxel.GAMEPAD1_BUTTON_DPAD_RIGHT):
-            self.x += 2
+        if pyxel.btnp(pyxel.GAMEPAD1_BUTTON_DPAD_DOWN):
+            self.y += 2
+        if pyxel.btnp(pyxel.GAMEPAD1_BUTTON_DPAD_LEFT):
+            self.x -= 2
         if pyxel.btnp(pyxel.GAMEPAD1_BUTTON_DPAD_RIGHT):
             self.x += 2
         #日本でいうところのAとB、XとYがそれぞれ逆なので注意
